@@ -45,11 +45,12 @@ function getStart() {
                 hour++;
                 minute = 0;
             }
-            document.getElementById("child1").innerText = hour < 10 ? "0" + hour : hour;
-            document.getElementById("child2").innerText = minute < 10 ? "0" + minute : minute;
-            document.getElementById("child3").innerText = second < 10 ? "0" + second : second;
-            document.getElementById("child4").innerText = milisecond < 10 ? "0" + milisecond : milisecond;
             getStart();
         }, 10);
+        document.getElementById("child1").innerText = hour < 10 ? "0" + hour : hour;
+        document.getElementById("child2").innerText = minute < 10 ? "0" + minute : minute;
+        document.getElementById("child3").innerText = second < 10 ? "0" + second : second;
+        document.getElementById("child4").innerText = milisecond < 10 ? "0" + milisecond : milisecond;
     }
 }
+
